@@ -10,7 +10,7 @@ const CartItem = (props) => {
                 <div class="col-md-2">{props.quantity}</div>
             </div>
         </div>
-    
+
     )
 
 }

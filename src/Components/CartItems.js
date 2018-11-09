@@ -3,7 +3,7 @@ import CartItem from './CartItem'
 
 const CartItems = ({cartItemsList}) => {
     let list = cartItemsList.map(item => 
-        <CartItem product={item.product.name} price={item.product.priceInCents} quantity={item.quantity}/>
+        <CartItem key={item.id} product={item.product.name} price={item.product.priceInCents} quantity={item.quantity}/>
     )
     return (
         <div className="container">
